@@ -1,0 +1,56 @@
+:root {
+  --text: #333;
+}
+
+body {
+  font-family: 'Mulish';
+  color: var(--text);
+}
+
+li {
+  list-style-type: circle;
+  color: var(--text);
+}
+
+.menu .spicy {
+  color: #ff0000;
+}
+.menu li:nth-child(odd) {
+  background: lightgrey;
+}
+
+#title {
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+}
+
+h2 {
+  color: green;
+  font-size: 1.1rem;
+}
+
+
+p {
+  animation-duration: 1500ms;
+  animation-name: slideinleft;
+}
+
+@keyframes slideinleft {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  body {
+    width: 780px;
+    margin: 0 auto;
+  }
+}
